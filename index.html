@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat">
+    <header class="chat__header">
+      <h1 class="chat__title">Mini Chat</h1>
+      <span class="chat__step">STEP 3 · GitHub Pages（STEP2の静的版を公開）</span>
+    </header>
+
+    <!-- 投稿一覧：JavaScriptがここに投稿を追加します -->
+    <main class="chat__messages" id="messages">
+      <article class="message">
+        <div class="message__meta">
+          <span class="message__name">さくら</span>
+          <time class="message__time">10:00</time>
+        </div>
+        <p class="message__body">こんにちは！下から投稿してみてください。</p>
+      </article>
+    </main>
+
+    <!-- 入力フォーム：投稿ボタンでJavaScriptが動きます -->
+    <form class="composer" id="composer">
+      <div class="composer__row">
+        <input class="composer__name" id="name" type="text" maxlength="20" placeholder="なまえ（20文字まで）">
+      </div>
+      <div class="composer__row">
+        <textarea class="composer__text" id="text" maxlength="200" rows="2" placeholder="メッセージ（200文字まで）"></textarea>
+        <button class="composer__button" type="submit">投稿</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
